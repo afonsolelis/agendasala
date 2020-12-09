@@ -14,6 +14,8 @@ class AgendamentosTest < ApplicationSystemTestCase
     visit agendamentos_url
     click_on "New Agendamento"
 
+    fill_in "Dia", with: @agendamento.dia
+    fill_in "Hora", with: @agendamento.hora
     fill_in "Sala", with: @agendamento.sala_id
     fill_in "User", with: @agendamento.user_id
     click_on "Create Agendamento"
@@ -26,6 +28,8 @@ class AgendamentosTest < ApplicationSystemTestCase
     visit agendamentos_url
     click_on "Edit", match: :first
 
+    fill_in "Dia", with: @agendamento.dia
+    fill_in "Hora", with: @agendamento.hora
     fill_in "Sala", with: @agendamento.sala_id
     fill_in "User", with: @agendamento.user_id
     click_on "Update Agendamento"

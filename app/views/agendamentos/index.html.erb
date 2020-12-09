@@ -7,6 +7,8 @@
     <tr>
       <th>Sala</th>
       <th>User</th>
+      <th>Dia</th>
+      <th>Hora</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= agendamento.sala_id %></td>
         <td><%= agendamento.user_id %></td>
+        <td><%= agendamento.dia %></td>
+        <td><%= agendamento.hora %></td>
         <td><%= link_to 'Show', agendamento %></td>
         <td><%= link_to 'Edit', edit_agendamento_path(agendamento) %></td>
         <td><%= link_to 'Destroy', agendamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
